@@ -28,7 +28,7 @@ SECRET_KEY = '@k!jt^d5$-aa%nd-82*19*&@q=^r93qrt$u04!upj+_5lyc^)a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.144.132.171', 'ecosteam.in', 'https://ecosteam.in','www.ecosteam.in']
+ALLOWED_HOSTS = ['127.0.0.1', '3.144.132.171', 'ecosteam.in', 'https://ecosteam.in','www.ecosteam.in']
 
 
 # Application definition
