@@ -219,13 +219,13 @@ CMS_PLACEHOLDER_CONF = {}
 
 DATABASES = {
     'default': {
-        'CONN_MAX_AGE': 0,
-        'ENGINE': 'django.db.backends.sqlite3',
-        'HOST': 'localhost',
-        'NAME': 'project.db',
-        'PASSWORD': '',
-        'PORT': '',
-        'USER': ''
+        'CONN_MAX_AGE': 120,
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': os.getenv('DB_HOST','127.0.0.1'),
+        'NAME': os.getenv('DB_NAME', 'voltworks-database'),
+        'PASSWORD': os.getenv('PASSWORD','password'),
+        'PORT': os.getenv('PORT','3306'),
+        'USER': os.getenv('DB_USER','root')
     }
 }
 
