@@ -223,8 +223,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': os.getenv('DB_HOST','127.0.0.1'),
         'NAME': os.getenv('DB_NAME', 'voltworks-database'),
-        'PASSWORD': os.getenv('PASSWORD','password'),
-        'PORT': os.getenv('PORT','3306'),
+        'PASSWORD': os.getenv('DB_PASSWORD','password'),
+        'PORT': os.getenv('DB_PORT','3306'),
         'USER': os.getenv('DB_USER','root')
     }
 }
