@@ -73,10 +73,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en'
-## LANGUAGE_CODE = 'zh-hant'
 
 TIME_ZONE = 'Asia/Kolkata'
-
 
 
 # Static files (CSS, JavaScript, Images)
@@ -181,7 +179,6 @@ INSTALLED_APPS = [
 LANGUAGES = (
     ## Customize this
     ('en', gettext('English')),
-    ## ('zh-hant', gettext('zh-hant')),
 )
 
 CMS_LANGUAGES = {
@@ -189,9 +186,7 @@ CMS_LANGUAGES = {
     1: [
         {
             'code': 'en',
-            ## 'code': 'zh-hant',
             'name': gettext('English'),
-            ## 'name': gettext('zh-hant'),
             'redirect_on_fallback': True,
             'public': True,
             'hide_untranslated': False,
@@ -205,7 +200,6 @@ CMS_LANGUAGES = {
 }
 
 CMS_TEMPLATES = (
-    ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right')
