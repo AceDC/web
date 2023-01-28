@@ -75,7 +75,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en'
 ## LANGUAGE_CODE = 'zh-hant'
 
-TIME_ZONE = 'Asia/Taipei'
+TIME_ZONE = 'Asia/Kolkata'
 
 
 
