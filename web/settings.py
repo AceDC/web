@@ -229,7 +229,7 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
-
+USE_TZ=True
 CMS_TEMPLATES = list(CMS_TEMPLATES)
 CMS_TEMPLATES += [('index.html', 'index.html'), ('index_content.html', 'index_content.html')]
 INSTALLED_APPS += ()
