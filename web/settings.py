@@ -215,11 +215,11 @@ DATABASES = {
     'default': {
         'CONN_MAX_AGE': 120,
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': os.getenv('DB_HOST','127.0.0.1'),
+        'HOST': os.getenv('DB_HOST','voltworks-database.cmd30dlftnv8.us-east-2.rds.amazonaws.com'),
         'NAME': os.getenv('DB_NAME', 'voltworks_database'),
-        'PASSWORD': os.getenv('DB_PASSWORD','password'),
+        'PASSWORD': os.getenv('DB_PASSWORD','quSDBKeO5Nft3iWnfIwK'),
         'PORT': os.getenv('DB_PORT','3306'),
-        'USER': os.getenv('DB_USER','root')
+        'USER': os.getenv('DB_USER','admin')
     }
 }
 
