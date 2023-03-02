@@ -202,7 +202,16 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('index1.html','mytemplate'),
+    ('about.html','about'),
+    ('contact.html','contact'),
+    ('Blog1.html','blog1'),
+    ('Blog2.html','blog2'),
+    ('Blog2.html','blog3'),
+    ('products.html','products'),
+    ('slideshow.html','slidesshow')
+   
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
