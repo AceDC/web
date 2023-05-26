@@ -1,248 +1,523 @@
 {% load cms_tags menu_tags sekizai_tags %}
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Voltworks-About</title>
-        <!-- Favicon-->
-        
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/logo.png'%}" />
-        
-        <!-- Bootstrap icons-->
-        
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
-        <link href="{% static 'css/about.css' %}" rel="stylesheet" />
-        {% render_block "css" %}
 
-    </head>
-    <body class="d-flex flex-column">
-        {% cms_toolbar %}
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="/home"><img src="{% static 'assets/logo.png'%}" alt="..." style="max-height: 5vh;"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/Products">Products</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5">
-                                {% placeholder 'index1-h1' or %}
-                                <h1 class="fw-bolder mb-3">Our mission is to make building websites easier for everyone.</h1>
-                                {% endplaceholder %}
-                                {% placeholder 'index1-p1' or %}
-                                <p class="lead fw-normal text-muted mb-4">We are committed to be at the forefront of innovation in the electric vehicle industry, with a mission to develop electric vehicle skateboards. By bringing all of the key components together into one integrated system, we are able to streamline the manufacturing process, reduce costs, and improve the overall performance and efficiency of electric vehicles.</p>
-                                {% endplaceholder %}
-                                <!-- <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- About section one-->
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'assets/img/oxygen.jpg' %}" alt="..." /></div>
-                        <div class="col-lg-6">
-                            {% placeholder 'index1-h2' or %}
-                            <h2 class="fw-bolder">Oxygen Plant</h2>
-                            {% endplaceholder %}
-                            {% placeholder 'index1-p2' or %}
-                            <p class="lead fw-normal text-muted mb-0">A part of the team was involved in the Mission Bharat O2 of the Government of India. Through this mission, they developed and installed 10 PSA technology-based 600-LPM capacity Oxygen Plants during the second wave of COVID-19 in India in a record time of 60 days.</p>
-                            {% endplaceholder %}
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section two-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'assets/img/CLUSTERLINE.jpg'%}" alt="..." /></div>
-                        <div class="col-lg-6">
-                            {% placeholder 'index1-h2-1' or %}
-                            <h2 class="fw-bolder">Clusterline Balzers System</h2>
-                            {% endplaceholder %}
-                            {% placeholder 'index1-p3' or %}
-                            <p class="lead fw-normal text-muted mb-0">One of the team members was involved in the development of CLUSTERLINE® 300, which is the first PVD tool worldwide that runs 300mm thin wafer backside metallization for power devices in production.</p>
-                            {% endplaceholder %}
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'assets/img/averera.jpg' %}" alt="..." /></div>
-                        <div class="col-lg-6">
-                            {% placeholder 'index1-h2-2' or %}
-                            <h2 class="fw-bolder">India's most efficient EV prototye: Team AVERERA</h2>
-                            {% endplaceholder %}
-                            {% placeholder 'index1-p4' or %}
-                            <p class="lead fw-normal text-muted mb-0">The team has also developed India’s most energy-efficient EV prototype and its 1kW BLDC motor controller.
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-                                The team had proved their technological know-how & excellent management skills by winning podium positions several times at the Shell Eco-marathon Global events, beating teams from Europe, Australia and Americas.</p>
-                            {% endplaceholder %}
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Team members section-->
-            <!-- <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder">Our team</h2>
-                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                <div class="fst-italic text-muted">Founder &amp; CEO</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Arden Vasek</h5>
-                                <div class="fst-italic text-muted">CFO</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-sm-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Toribio Nerthus</h5>
-                                <div class="fst-italic text-muted">Operations Manager</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Malvina Cilla</h5>
-                                <div class="fst-italic text-muted">CTO</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-        </main>
+  <title>Voltworks - About</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Together we will make a difference.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg'%}" alt="..." />
-                            <h4>Shashank Kumar</h4>
-                            <p class="text-muted">Chief Engineer - Software</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/shashank-kumar-292402192/" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/2.jpg' %}" alt="..." />
-                            <h4>Himanshu Sahu</h4>
-                            <p class="text-muted">Founder and Executions</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/himanshuiitbhu/" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/3.jpg' %}" alt="..." />
-                            <h4>Rishabh Singh</h4>
-                            <p class="text-muted">Founder and Technical</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/rishabh-singh-86a315173/" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/4.jpg'%}" alt="..." />
-                            <h4>Bhagyesh Trivedi</h4>
-                            <p class="text-muted">Chief Engineer - Validation and Prototyping</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/bhagyesh-trivedi-8456a7148/" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/5.jpg' %}" alt="..." />
-                            <h4>Keshav Pathak</h4>
-                            <p class="text-muted">Chief Engineer - Mechanical H/W</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/6.jpg' %}" alt="..." />
-                            <h4>Devendra Chaudhary</h4>
-                            <p class="text-muted">Founder and Strategy</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/chaudharydevendra/" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div> -->
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png'%}" rel="icon">
+  <link href="{% static 'assets/img/logo.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  {% render_block "css" %}
+</head>
+
+<body>
+  {% cms_toolbar %}
+
+   <!-- ======= Header ======= -->
+   <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+  
+        <img src="{% static 'assets/img/logo.png'%}" alt="" width="100vw" height="100vh">
+        <!-- <h1>Volt<span>Works</span></h1> -->
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/product_motors">Motors</a></li>
+              <li><a href="/product_controllers">Controllers</a></li>
+              <li><a href="/product_charger">Chargers</a></li>
+            </ul>
+          <li><a href="projects.html">Carrier</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul> -->
+          <li><a href="/contact" style="border: 9px solid rgba(0, 0, 0, 0); background-color: #25d366; text-transform:capitalize; height: 40px; top: -1px;padding: 10px;padding-top: 10px;text-align: center; padding-left: 20px;padding-right: 20px; border-radius: 4px;">Contact US</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{% static 'assets/img/slideshow/1.jpg'%}');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>About</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>About</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" style="background-image: url('{%static 'assets/img/Products/Charger.jpg' %}');"></div>
+
+          <div class="col-lg-7">
+            <div class="our-story">
+              <p>
+                {% placeholder 'about-p-1' %}
+              </p>
+              <p>
+                {% placeholder 'about-p-2' %}
+                 
+              </p>
+              <p>
+                {% placeholder 'about-p-3' %}
+              
+              </p>
+              <p>
+                We are supported and mentored by the professors of top institutes in the country, such as IIT Kanpur, IIT Madras, IIT Delhi, IIT BHU, and NIT Silchar. Moreover, we have mentors from the EV and Embedded Software industries, such as Mr. Priyank Dahanukar, Electric Vehicles India's founder, Mr. Johannes Huebner, and Mr. Sven Hurlimann.
+              </p>
+              <p>
+                {% placeholder 'about-p-4' %}
+               
+              </p>
+              <!-- <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox stretched-link">Watch Video</a>
+              </div> -->
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2022</div></div>
-                    <div class="col-auto">
-                        <!-- <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a> -->
-                    </div>
-                </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+
+    <!-- Features section -->
+    <section id="features" class="features-area item-full text-center cell-items default-padding" style="background-color: #f5f6f7;" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="site-heading text-center">
+                      <h2 style="color: black;">Our Features</h2>
+                      <h4>Checkout our latest features</h4>
+                  </div>
+              </div>
+          </div>
+              <div class="row features-items">
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <div class="icon">
+                              <i class="fas fa-tv"></i>
+                          </div>
+                          <div class="info">
+                              <h4>{% placeholder 'about-h4-1' %}</h4>
+                              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                              </p> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <div class="icon">
+                              <i class="fas fa-headset"></i>
+                          </div>
+                          <div class="info">
+                              <h4>{% placeholder 'about-h4-2' %}</h4>
+                              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                              </p> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <div class="icon">
+                              <i class="fas fa-chart-line"></i>
+                          </div>
+                          <div class="info">
+                              <h4>{% placeholder 'about-h4-3' %}</h4>
+                              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                              </p> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <div class="icon">
+                              <i class="fas fa-pen-fancy"></i>
+                          </div>
+                          <div class="info">
+                              <h4>{% placeholder 'about-h4-4' %}</h4>
+                              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                              </p> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <div class="icon">
+                              <i class="fas fa-tachometer-alt"></i>
+                          </div>
+                          <div class="info">
+                              <h4>{% placeholder 'about-h4-5' %}</h4>
+                              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                              </p> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <div class="icon">
+                              <i class="fas fa-diagnoses"></i>
+                          </div>
+                          <div class="info">
+                              <h4>{% placeholder 'about-h4-6' %}</h4>
+                              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                              </p> -->
+                          </div>
+                      </div>
+                  </div>
+          </div>
+      </div>
+  </section>
+
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Amazing Team</h2>
+          <p>Together we will make a difference.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/Profile Pic (1).jpg'%}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="{%static 'js/scripts.js' %}"></script>
-        {% render_block "js" %}
-    </body>
+            <div class="member-info text-center">
+              <h4>Devendra Chaudhary</h4>
+              <span>Founder and Strategy</span>
+            
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/Himanshu.jpg'%}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Himanshu Sahu</h4>
+              <span>Founder and Executions</span>
+            
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/Risabh.jpg'%}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Rishabh Singh
+              </h4>
+              <span>Founder and Technical</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/Shashank.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Shashank Kumar</h4>
+              <span>Chief Engineer - Software </span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/Bhavesh.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Bhagyesh Trivedi</h4>
+              <span>Chief Engineer - Validation and Prototyping</span>
+              </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/Keshav Pathak.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Keshav Pathak</h4>
+              <span>Chief Engineer - Mechanical H/W</span>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+
+      <!-- == Contact us ==-->
+      <section id="get-started" class="get-started section-bg"">
+        <div class="container">
+  
+          <div class="row justify-content-between gy-4">
+  
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+              <div class="content">
+                
+                <h3 style=" font-style: IBM plex Sans;font-size: 38px; line-height: 38px; font-weight: bold;">{% placeholder 'about-h3-1' %} </h3>
+                <!-- <span style="color: #25d366;" class="auto-type" ></span> -->
+                <!-- <h1>Team VoltWorks is happy to be in touch with you.</h1> -->
+                <img src="{% static 'assets/img/Contact-US.jpg' %}" alt="" >
+               
+                <p>{% placeholder 'about-contact-p-1' %}</p>
+                
+               
+              </div>
+            </div>
+  
+            <div class="col-lg-5" data-aos="fade">
+              <form action="forms/quote.php" method="post" class="php-email-form">
+                <h3 >Get in touch</h3>
+                
+                <div class="row gy-3">
+  
+                  <div class="col-md-12">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                  </div>
+  
+                  <div class="col-md-12 ">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </div>
+  
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your request has been sent successfully. Thank you!</div>
+  
+                    <button type="submit">Submit</button>
+                  </div>
+  
+                </div>
+              </form>
+            </div><!-- End Quote Form -->
+  
+          </div>
+  
+        </div>
+      </section>
+  
+      <!-- == End of Contact us ==-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <a href="index.html">
+                <img src="{% static 'assets/img/logo.png' %}" alt="" width="100vw" height="80%" style="margin-bottom:40px;">
+
+              </a>
+              <!-- <h3>Volt<span style="color: #a1c431;">Works</span></h3> -->
+              
+              <p>              
+                D-14, Block D, Sector 10,<br>
+                Noida, Gautam Buddha Nagar,<br>
+                Uttar Pradesh – 201301<br><br>
+                <strong>Phone:</strong>  +91-9651184831<br>
+                <strong>Email:</strong> hello@voltworks.in<br>
+              </p>
+              <!-- <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Media</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><a href="#">Motors</a></li>
+              <li><a href="#">Controller</a></li>
+              <li><a href="#">Charger</a></li>
+            </ul>
+          </div>
+
+          
+
+           <div class="col-lg-2 col-md-3 footer-links" >
+             <div class="social-links d-flex mt-3" style="margin-left: 30px;">
+                <a href="#" class="d-flex align-items-center justify-content-center" style="margin: 10px;"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"style="margin: 10px;"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"style="margin: 10px;"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"style="margin: 10px;"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div><!--End footer links column -->
+
+          <!-- <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div>End footer links column -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <h3>Made with <img draggable="false" role="img" class="emoji" alt="❤️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2764.svg"> in india</h3>
+        <div class="copyright">
+          &copy; Copyright <strong><span>VoltWorks</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a href="index.html">VoltWorks</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+  <script src="{% static 'assets/js/slide.js' %}"></script>
+
+  {% render_block "js" %}
+</body>
+
 </html>

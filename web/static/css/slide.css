@@ -1,0 +1,325 @@
+https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
+https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80
+<div class="info d-flex align-items-center">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 text-center">
+      <h2 data-aos="fade-down"><span style="color: #a1c431;">E</span>le<span style="color: #a1c431;">V</span>ate
+        your Drive</h2>
+      <p data-aos="fade-up">Innovating for sustainable tomorrow with vertically integrated deep tech engineering.
+      </p>
+      <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Learn More</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+<div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)">
+</div>
+<div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
+<div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
+<!-- <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div> -->
+<!-- <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div> -->
+
+<!-- <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+</a>
+
+<a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+  <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+</a> -->
+
+</div>
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+/* .hero .carousel {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+}
+
+.hero .carousel-item {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
+.hero .carousel-item::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+}
+
+.hero .info {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero .info {
+    padding: 0 50px;
+  }
+}
+
+.hero .info h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 56px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero .info h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .hero .info h2 {
+    font-size: 36px;
+  }
+}
+
+.hero .info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.hero .info .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  border: 2px solid var(--color-primary);
+}
+
+.hero .info .btn-get-started:hover {
+  background: var(--color-primary);
+}
+
+.hero .carousel-control-prev {
+  justify-content: start;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+.hero .carousel-control-next {
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  .hero .carousel-control-next {
+    padding-right: 15px;
+  }
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 26px;
+  line-height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.hero .carousel-control-prev:focus,
+.hero .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+  opacity: 0.9;
+} */
+
+
+
+<!-- ======= Our Projects Section ======= -->
+<section id="projects" class="projects">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2 style="color: white;">Gallery</h2>
+      <!-- <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p> -->
+    </div>
+
+    <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+      data-portfolio-sort="original-order">
+
+      
+
+      <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/Gallary/gallery-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <a href="assets/img/projects/construction-1.jpg" title="Motor"
+                data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Projects Item -->
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/Gallary/gallery-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+             
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+              <a href="assets/img/projects/construction-2.jpg" title="Controller"
+                data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Projects Item -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Repairs 2</h4>
+               <p>Lorem ipsum, dolor sit amet consectetur</p> 
+              <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
+                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>End Projects Item -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Design 2</h4>
+              < <p>Lorem ipsum, dolor sit amet consectetur</p> 
+              <a href="assets/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book"
+                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>End Projects Item -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Remodeling 3</h4>
+               <p>Lorem ipsum, dolor sit amet consectetur</p> 
+              <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3"
+                data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>End Projects Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/Gallary/zbynek-burival-4NhqyQeErP8-unsplash.jpg"class="img-fluid" alt="">
+            <div class="portfolio-info">
+              
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+              <a href="assets/img/projects/construction-3.jpg" title="Motor"
+                data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Projects Item -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Repairs 3</h4>
+             <p>Lorem ipsum, dolor sit amet consectetur</p> 
+              <a href="assets/img/projects/repairs-3.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
+                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>End Projects Item -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Design 3</h4>
+               <p>Lorem ipsum, dolor sit amet consectetur</p> 
+              <a href="assets/img/projects/design-3.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book"
+                class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="project-details.html" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>End Projects Item -->
+
+      </div><!-- End Projects Container -->
+
+    </div>
+
+  </div>
+</section><!-- End Our Projects Section -->

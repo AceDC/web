@@ -206,11 +206,13 @@ CMS_TEMPLATES = (
     ('index1.html','mytemplate'),
     ('about.html','about'),
     ('contact.html','contact'),
-    ('Blog1.html','blog1'),
-    ('Blog2.html','blog2'),
-    ('Blog2.html','blog3'),
-    ('products.html','products'),
-    ('slideshow.html','slidesshow')
+    # ('products.html','products'),
+    ('index-1.html','template'),
+    ('product_motors.html','product_motors'),
+    ('product_controllers.html','product_controllers'),
+    ('product_chargers.html','product_chargers'),
+    ('carriers.html','Carrier')
+    # ('product_sub_1.html','sub_product')
    
 )
 
